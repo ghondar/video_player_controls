@@ -20,7 +20,7 @@ dependencies:
   wakelock: ^0.1.4+2
   subtitle_wrapper_package:
     git:
-      url: "https://github.com/cherlow/flutter_subtitle_wrapper.git"
+      url: "https://github.com/Worien/flutter_subtitle_wrapper"
   toast: ^0.1.5
   fullscreen: ^1.0.3
   flutter_ui_mode_manager: ^1.0.0
