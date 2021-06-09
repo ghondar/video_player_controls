@@ -203,12 +203,11 @@ class _VideoPlayerInterfaceState extends State<VideoPlayerInterface>
     //
     await _videoPlayerController.setLooping(_controller.isLooping);
 
-    if ((_controller.autoInitialize || _controller.autoPlay) &&
-        !_videoPlayerController.value.initialized) {
+    if ((_controller.autoInitialize || _controller.autoPlay)) {
       await _videoPlayerController.initialize();
     }
 
-    if (!_controller.autoPlay && !_videoPlayerController.value.initialized) {
+    if (!_controller.autoPlay) {
       await _videoPlayerController.initialize();
     }
 
